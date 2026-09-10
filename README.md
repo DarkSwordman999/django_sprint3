@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20&height=180&section=header&text=Blogicum&fontSize=70&fontAlignY=35&desc=Django%20Blog%20Platform%20%7C%20Yandex%20Practicum&descAlignY=55&descSize=18" alt="Banner" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20&height=180&section=header&text=Blogicum&fontSize=70&fontAlignY=35&desc=Django%20Blog%20Platform%20%7C%20Yandex%20Practicum&descAlignY=55&descSize=18" alt="Blogicum Banner" width="100%">
 
 <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
 <img src="https://img.shields.io/badge/Django-5.x-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
@@ -16,199 +16,342 @@
 
 <br><br>
 
-<h2>🐍 Blogicum — блог-платформа на Django</h2>
+<h2>📝 Blogicum — блог-платформа на Django</h2>
 
-<p><b>Учебный проект в рамках курса «Python-разработчик» от Яндекс Практикума</b></p>
-
-</div>
-
-<hr>
-
-<h2>📖 О проекте</h2>
-
-<p><b>Blogicum</b> — площадка для ведения блогов. Пользователи могут публиковать посты, привязывать их к категориям и локациям, а также просматривать записи других авторов.</p>
-
-<p>В третьем спринте полностью подключены Django-модели, шаблоны с наследованием, маршрутизация с namespace и работа с реальными данными из БД через дамп <code>db.json</code>.</p>
-
-<hr>
-
-<h2>✅ Что уже сделано</h2>
-
-<ul>
-  <li>Django-проект с приложениями <code>blog</code> и <code>pages</code>.</li>
-  <li>Модели <code>Category</code>, <code>Location</code>, <code>Post</code> с полями <code>created_at</code>, <code>is_published</code>, <code>title</code>, <code>slug</code>, <code>description</code>, <code>text</code>, <code>pub_date</code>, <code>author</code>, <code>category</code>, <code>location</code>.</li>
-  <li>Базовый шаблон <code>base.html</code> с блоками <code>title</code> и <code>content</code>.</li>
-  <li>Инклюды: <code>header.html</code>, <code>footer.html</code>, <code>post_card.html</code>, <code>category_link.html</code>.</li>
-  <li>Страницы: лента записей, пост, категория, «О проекте», «Наши правила».</li>
-  <li>Маршрутизация с namespace: <code>blog:index</code>, <code>blog:post_detail</code>, <code>blog:category_posts</code>, <code>pages:about</code>, <code>pages:rules</code>.</li>
-  <li>Подсветка активного пункта меню через <code>request.resolver_match.view_name</code>.</li>
-  <li>Дамп данных <code>db.json</code>: 6 категорий, 12 локаций, 39 постов, 4 пользователя.</li>
-  <li>Настроены линтеры и тесты.</li>
-</ul>
-
-<hr>
-
-<h2>🚧 Что в разработке</h2>
-
-<ul>
-  <li>Регистрация, авторизация и профили пользователей.</li>
-  <li>Комментарии к постам.</li>
-  <li>Загрузка изображений к постам.</li>
-  <li>Возможность создавать и редактировать посты через интерфейс.</li>
-</ul>
-
-<hr>
-
-<h2>🛠️ Технологии</h2>
-
-<div align="center">
-
-<table>
-  <thead>
-    <tr>
-      <th align="left">Технология</th>
-      <th align="left">Назначение</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><b>Python</b></td><td>Язык разработки</td></tr>
-    <tr><td><b>Django</b></td><td>Веб-фреймворк</td></tr>
-    <tr><td><b>SQLite</b></td><td>База данных</td></tr>
-    <tr><td><b>Bootstrap</b></td><td>CSS-фреймворк</td></tr>
-    <tr><td><b>Pytest</b></td><td>Тестирование</td></tr>
-    <tr><td><b>pytest-django</b></td><td>Интеграция pytest с Django</td></tr>
-    <tr><td><b>Flake8</b></td><td>Линтинг кода</td></tr>
-  </tbody>
-</table>
+<p>
+  <b>Учебный проект в рамках курса «Python-разработчик» от Яндекс Практикума</b>
+</p>
 
 </div>
 
-<hr>
+---
 
-<h2>📂 Структура проекта</h2>
+## 📖 О проекте
 
-<pre><code>django_sprint3/
+**Blogicum** — веб-платформа для ведения блогов. Пользователи могут публиковать записи, привязывать их к категориям и локациям, а также просматривать публикации других авторов.
+
+В рамках третьего спринта проект полностью переведён на Django:
+
+* подключены модели и база данных;
+* реализовано наследование шаблонов;
+* настроена маршрутизация с `namespace`;
+* добавлена работа с реальными данными;
+* подключён дамп `db.json`;
+* реализованы автоматические тесты и линтинг.
+
+### 🔄 Текущий этап
+
+```text
+Статическая вёрстка
+        ↓
+Django Templates
+        ↓
+Модели и база данных
+        ↓
+Динамические страницы
+        ↓
+Аутентификация и профили
+        ↓
+Комментарии
+        ↓
+Полноценная блог-платформа
+```
+
+---
+
+## ✅ Реализовано
+
+### 🧩 Django и модели
+
+* Django-проект с приложениями `blog` и `pages`.
+* Модели:
+
+  * `Category`
+  * `Location`
+  * `Post`
+* Поля моделей:
+
+  * `created_at`
+  * `is_published`
+  * `title`
+  * `slug`
+  * `description`
+  * `text`
+  * `pub_date`
+  * `author`
+  * `category`
+  * `location`
+
+### 🎨 Шаблоны
+
+* Базовый шаблон `base.html`.
+* Наследование шаблонов через блоки `title` и `content`.
+* Переиспользуемые шаблонные включения:
+
+  * `header.html`
+  * `footer.html`
+  * `post_card.html`
+  * `category_link.html`
+
+### 📄 Страницы
+
+* Лента публикаций.
+* Страница отдельного поста.
+* Страница категории.
+* Страница «О проекте».
+* Страница «Наши правила».
+
+### 🔗 Маршрутизация
+
+Настроены именованные маршруты с использованием `namespace`:
+
+```text
+blog:index
+blog:post_detail
+blog:category_posts
+
+pages:about
+pages:rules
+```
+
+Активный пункт навигации определяется через:
+
+```python
+request.resolver_match.view_name
+```
+
+### 🗃️ Данные
+
+Проект содержит дамп `db.json`:
+
+| Сущность     | Количество |
+| :----------- | ---------: |
+| Категории    |          6 |
+| Локации      |         12 |
+| Посты        |         39 |
+| Пользователи |          4 |
+
+---
+
+## 🚧 В разработке
+
+* 👤 Регистрация и авторизация пользователей.
+* 🪪 Профили пользователей.
+* 💬 Комментарии к постам.
+* 🖼️ Загрузка изображений к публикациям.
+* ✏️ Создание и редактирование постов через пользовательский интерфейс.
+
+---
+
+## 🛠️ Технологии
+
+| Технология          | Назначение                 |
+| :------------------ | :------------------------- |
+| **Python 3.10+**    | Язык разработки            |
+| **Django 5.x**      | Веб-фреймворк              |
+| **SQLite**          | База данных                |
+| **Bootstrap 5.0.1** | CSS-фреймворк              |
+| **Pytest**          | Тестирование               |
+| **pytest-django**   | Интеграция Pytest с Django |
+| **Flake8**          | Линтинг кода               |
+
+---
+
+## 📂 Структура проекта
+
+```text
+django_sprint3/
 ├── templates/
 │   ├── blog/
-│   │   ├── category.html       # Страница категории
-│   │   ├── detail.html         # Страница отдельного поста
-│   │   └── index.html          # Лента записей
+│   │   ├── category.html          # Страница категории
+│   │   ├── detail.html            # Страница отдельного поста
+│   │   └── index.html             # Лента записей
+│   │
 │   ├── includes/
-│   │   ├── category_link.html  # Ссылка на категорию
-│   │   ├── footer.html         # Подвал сайта
-│   │   ├── header.html         # Навигация
-│   │   └── post_card.html      # Карточка поста
+│   │   ├── category_link.html     # Ссылка на категорию
+│   │   ├── footer.html             # Подвал сайта
+│   │   ├── header.html             # Навигация
+│   │   └── post_card.html          # Карточка поста
+│   │
 │   ├── pages/
-│   │   ├── about.html          # Страница «О проекте»
-│   │   └── rules.html          # Страница «Наши правила»
-│   └── base.html               # Базовый шаблон
+│   │   ├── about.html              # Страница «О проекте»
+│   │   └── rules.html              # Страница «Наши правила»
+│   │
+│   └── base.html                   # Базовый шаблон
+│
 ├── tests/
-│   ├── fixtures/               # Фикстуры для тестов
-│   ├── conftest.py             # Общие настройки pytest
-│   ├── test_admin_page.py      # Тесты админки
-│   ├── test_category_model.py  # Тесты модели Category
-│   ├── test_category_page_views.py
-│   ├── test_localization.py    # Тесты локализации
-│   ├── test_location_model.py  # Тесты модели Location
-│   ├── test_pageapp_views.py   # Тесты статических страниц
-│   ├── test_post_detail_views.py
-│   ├── test_post_model.py      # Тесты модели Post
-│   ├── test_posts_page_views.py
-│   └── test_urls.py            # Тесты маршрутов
-├── .flake8                     # Конфигурация flake8
-├── .gitignore                  # Исключения Git
-├── LICENSE                     # Лицензия проекта
-├── README.md                   # Документация
-├── db.json                     # Дамп данных для загрузки в БД
-├── pytest.ini                  # Конфигурация pytest
-├── requirements.txt            # Зависимости проекта
-└── manage.py                   # Управляющий скрипт Django</code></pre>
+│   ├── fixtures/                    # Фикстуры для тестов
+│   ├── conftest.py                  # Общие настройки pytest
+│   ├── test_admin_page.py           # Тесты админки
+│   ├── test_category_model.py       # Тесты модели Category
+│   ├── test_category_page_views.py  # Тесты страницы категории
+│   ├── test_localization.py         # Тесты локализации
+│   ├── test_location_model.py       # Тесты модели Location
+│   ├── test_pageapp_views.py        # Тесты статических страниц
+│   ├── test_post_detail_views.py    # Тесты страницы поста
+│   ├── test_post_model.py           # Тесты модели Post
+│   ├── test_posts_page_views.py     # Тесты ленты постов
+│   └── test_urls.py                 # Тесты маршрутов
+│
+├── .flake8                          # Конфигурация Flake8
+├── .gitignore                       # Исключения Git
+├── LICENSE                          # Лицензия проекта
+├── README.md                        # Документация
+├── db.json                          # Дамп данных
+├── pytest.ini                       # Конфигурация pytest
+├── requirements.txt                 # Зависимости проекта
+└── manage.py                        # Управляющий скрипт Django
+```
 
-<hr>
+---
 
-<h2>🚀 Запуск</h2>
+## 🚀 Запуск проекта
 
-<h3>Требования</h3>
-<ul>
-  <li><b>Python</b> 3.10 или выше.</li>
-  <li><b>pip</b> для установки зависимостей.</li>
-</ul>
+### 📋 Требования
 
-<h3>Шаги</h3>
-<ol>
-  <li>
-    <b>Клонируйте репозиторий:</b>
-    <pre><code>git clone https://github.com/DarkSwordman999/django_sprint3.git
-cd django_sprint3</code></pre>
-  </li>
-  <li>
-    <b>Создайте и активируйте виртуальное окружение:</b>
-    <pre><code>python -m venv venv
+* **Python** 3.10 или выше
+* **pip** для установки зависимостей
 
-# Windows:
+<details>
+<summary><b>1. Клонирование репозитория</b></summary>
+
+```bash
+git clone https://github.com/DarkSwordman999/django_sprint3.git
+cd django_sprint3
+```
+
+</details>
+
+<details>
+<summary><b>2. Виртуальное окружение</b></summary>
+
+```bash
+python -m venv venv
+```
+
+**Windows:**
+
+```bash
 venv\Scripts\activate
+```
 
-# macOS / Linux:
-source venv/bin/activate</code></pre>
-  </li>
-  <li>
-    <b>Установите зависимости:</b>
-    <pre><code>pip install -r requirements.txt</code></pre>
-  </li>
-  <li>
-    <b>Примените миграции:</b>
-    <pre><code>python manage.py migrate</code></pre>
-  </li>
-  <li>
-    <b>Загрузите данные из дампа:</b>
-    <pre><code>python manage.py loaddata db.json</code></pre>
-  </li>
-  <li>
-    <b>Запустите сервер разработки:</b>
-    <pre><code>python manage.py runserver</code></pre>
-  </li>
-</ol>
+**macOS / Linux:**
 
-<p>После запуска проект доступен по адресу <code>http://127.0.0.1:8000/</code>, админ-панель — <code>http://127.0.0.1:8000/admin/</code>.</p>
+```bash
+source venv/bin/activate
+```
 
-<hr>
+</details>
 
-<h2>🧪 Тестирование</h2>
+<details>
+<summary><b>3. Установка зависимостей</b></summary>
 
-<p>Тесты запускаются через <b>pytest</b> с плагином <b>pytest-django</b>. Конфигурация — в <code>pytest.ini</code>.</p>
+```bash
+pip install -r requirements.txt
+```
 
-<pre><code>pytest</code></pre>
+</details>
 
-<p>Что проверяется:</p>
-<ul>
-  <li><b>Модели:</b> <code>test_category_model.py</code>, <code>test_location_model.py</code>, <code>test_post_model.py</code>.</li>
-  <li><b>Вьюхи:</b> <code>test_category_page_views.py</code>, <code>test_post_detail_views.py</code>, <code>test_posts_page_views.py</code>, <code>test_pageapp_views.py</code>.</li>
-  <li><b>Маршруты:</b> <code>test_urls.py</code>.</li>
-  <li><b>Админка:</b> <code>test_admin_page.py</code>.</li>
-  <li><b>Локализация:</b> <code>test_localization.py</code>.</li>
-</ul>
+<details>
+<summary><b>4. Применение миграций</b></summary>
 
-<hr>
+```bash
+python manage.py migrate
+```
 
-<h2>🧹 Линтинг</h2>
+</details>
 
-<p>Код проверяется линтером <b>flake8</b>. Настройки — в файле <code>.flake8</code>.</p>
+<details>
+<summary><b>5. Загрузка тестовых данных</b></summary>
 
-<pre><code>flake8 .</code></pre>
+Данные из подготовленного дампа загружаются командой:
 
-<hr>
+```bash
+python manage.py loaddata db.json
+```
 
-<h2>📄 Лицензия</h2>
+</details>
 
-<p>Проект распространяется под лицензией, указанной в файле <a href="./LICENSE">LICENSE</a>.</p>
+<details>
+<summary><b>6. Запуск сервера</b></summary>
 
-<hr>
+```bash
+python manage.py runserver
+```
 
-<h2>👤 Автор</h2>
+После запуска проект будет доступен по адресу:
+
+```text
+http://127.0.0.1:8000/
+```
+
+Админ-панель:
+
+```text
+http://127.0.0.1:8000/admin/
+```
+
+</details>
+
+---
+
+## 🧪 Тестирование
+
+Для тестирования используется **Pytest** совместно с **pytest-django**.
+
+Конфигурация тестового окружения находится в:
+
+```text
+pytest.ini
+```
+
+Запуск всех тестов:
+
+```bash
+pytest
+```
+
+### 🔍 Что проверяется
+
+| Область         | Тесты                                                                                                           |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **Модели**      | `test_category_model.py`, `test_location_model.py`, `test_post_model.py`                                        |
+| **Вьюхи**       | `test_category_page_views.py`, `test_post_detail_views.py`, `test_posts_page_views.py`, `test_pageapp_views.py` |
+| **Маршруты**    | `test_urls.py`                                                                                                  |
+| **Админка**     | `test_admin_page.py`                                                                                            |
+| **Локализация** | `test_localization.py`                                                                                          |
+
+---
+
+## 🧹 Линтинг
+
+Для проверки качества и соответствия кода стандартам используется **Flake8**.
+
+Конфигурация находится в:
+
+```text
+.flake8
+```
+
+Запуск проверки:
+
+```bash
+flake8 .
+```
+
+---
+
+## 📄 Лицензия
+
+Проект распространяется под лицензией, указанной в файле [`LICENSE`](./LICENSE).
+
+---
+
+## 👤 Автор
 
 <div align="center">
 
-<p><b>DarkSwordman999</b></p>
+### DarkSwordman999
 
 <a href="https://github.com/DarkSwordman999">
   <img src="https://img.shields.io/badge/GitHub-DarkSwordman999-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
@@ -216,12 +359,14 @@ source venv/bin/activate</code></pre>
 
 </div>
 
-<hr>
+---
 
 <div align="center">
 
-<h3>🎓 Проект создан в рамках курса «Python-разработчик» от <a href="https://practicum.yandex.ru/">Яндекс Практикума</a></h3>
+### 🎓 Yandex Practicum
 
-<p><i>Учебный проект. Создан в образовательных целях.</i></p>
+**Проект создан в рамках курса «Python-разработчик» от Яндекс Практикума.**
+
+*Учебный проект. Создан в образовательных целях.*
 
 </div>
