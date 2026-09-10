@@ -168,15 +168,15 @@ django_sprint3/
 │   │
 │   ├── includes/
 │   │   ├── category_link.html     # Ссылка на категорию
-│   │   ├── footer.html             # Подвал сайта
-│   │   ├── header.html             # Навигация
-│   │   └── post_card.html          # Карточка публикации
+│   │   ├── footer.html            # Подвал сайта
+│   │   ├── header.html            # Навигация
+│   │   └── post_card.html         # Карточка публикации
 │   │
 │   ├── pages/
-│   │   ├── about.html              # Страница «О проекте»
-│   │   └── rules.html              # Страница «Наши правила»
+│   │   ├── about.html             # Страница «О проекте»
+│   │   └── rules.html             # Страница «Наши правила»
 │   │
-│   └── base.html                   # Базовый шаблон
+│   └── base.html                  # Базовый шаблон
 │
 ├── tests/
 │   ├── fixtures/                   # Фикстуры
@@ -186,8 +186,8 @@ django_sprint3/
 │   ├── test_category_page_views.py # Тесты страницы категории
 │   ├── test_localization.py        # Тесты локализации
 │   ├── test_location_model.py      # Тесты Location
-│   ├── test_pageapp_views.py       # Тесты статических страниц
-│   ├── test_post_detail_views.py   # Тесты страницы поста
+│   ├── test_pageapp_views.py        # Тесты статических страниц
+│   ├── test_post_detail_views.py    # Тесты страницы поста
 │   ├── test_post_model.py           # Тесты Post
 │   ├── test_posts_page_views.py     # Тесты ленты
 │   └── test_urls.py                 # Тесты маршрутов
@@ -369,7 +369,7 @@ flake8 .
 **поставьте ⭐ репозиторию на GitHub** — это лучшая поддержка проекта!
 
 <a href="https://github.com/DarkSwordman999/django_sprint3">
-  <img src="https://img.shields.io/github/stars/DarkSwordman999/django_sprint3?style=for-the-badge&logo=github&label=Star%20repository" alt="Star repository">
+  <img src="https://img.shields.io/badge/⭐%20Star%20repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Star repository">
 </a>
 
 <br><br>
